@@ -22,30 +22,4 @@ public class Shape {
     }
 
 
-    public static void main(String[] args) {
-
-        Circle circle = new Circle();
-        circle.setName("Коло");
-        System.out.println(circle);
-
-        Triangular triangular = new Triangular();
-        triangular.setName("Трикутник");
-        System.out.println(triangular);
-
-        Star star = new Star();
-        star.setName("Зірка");
-        System.out.println(star);
-
-        Parallelogram parallelogram = new Parallelogram();
-        parallelogram.setName("Паралелограм");
-        System.out.println(parallelogram);
-
-        Square square = new Square();
-        square.setName("Квадрат");
-        System.out.println(square);
-
-        Trapeze trapeze = new Trapeze();
-        trapeze.setName("Трапеція");
-        System.out.println(trapeze);
-    }
 }
