@@ -1,5 +1,5 @@
 package Task8;
 
-public class Triangular extends Shape{
+public class Triangular extends Shape {
 
 }

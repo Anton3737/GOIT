@@ -1,5 +1,5 @@
 package Task8;
 
-public class Parallelogram extends Shape{
+public class Parallelogram extends Shape {
 
 }
