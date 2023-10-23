@@ -32,5 +32,19 @@ public class Main {
         trapeze.setName("Трапеція" + " ⏢");
         System.out.println(trapeze);
 
+        System.out.println("\n _______________________________\n");
+
+        // Створено окремий екземпляр класу від класу ShapePrinter де реалізовано 1 метод принтер що приймає екземпляр класу фігури та
+        // повертає поле name що передано в методі set.
+
+
+        ShapePrinter shapePrinter = new ShapePrinter();
+        shapePrinter.printShape(circle);
+        shapePrinter.printShape(triangular);
+        shapePrinter.printShape(star);
+        shapePrinter.printShape(square);
+        shapePrinter.printShape(trapeze);
+
+
     }
 }
