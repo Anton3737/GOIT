@@ -44,7 +44,7 @@ public class Main {
         shapePrinter.printShape(star);
         shapePrinter.printShape(square);
         shapePrinter.printShape(trapeze);
-
-
     }
 }
+
+//    Pattern pattern = Pattern.compile("\\(\\d{3}\\) \\d{3}-\\d{4}|\\d{3}-\\d{3}-\\d{4}");
