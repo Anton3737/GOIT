@@ -1,11 +1,11 @@
 package Task10.Tast2;
 
 public class User {
-
+    // створюємо звичайни описовий клас з приватними полями , конструктором і методами get та set
     private String name;
-    private int age;
+    private String age;
 
-    public User(String name, int age) {
+    public User(String name, String age) {
         this.name = name;
         this.age = age;
     }
@@ -18,22 +18,11 @@ public class User {
         this.name = name;
     }
 
-    public int getAge() {
+    public String getAge() {
         return age;
     }
 
-    public void setAge(int age) {
+    public void setAge(String age) {
         this.age = age;
     }
-
-
 }
-
-//
-//    String text = "Віктор 22";
-//    String[] parts = text.split("\\s+\\d+\\s*");
-//    String name = parts[0];
-//    String age = parts[1];
-//
-//System.out.println("Ім'я: " + name);
-//        System.out.println("Вік: " + age);
