@@ -4,6 +4,7 @@ import java.io.BufferedReader;
 import java.io.FileNotFoundException;
 import java.io.FileReader;
 import java.io.IOException;
+import java.util.Comparator;
 import java.util.HashMap;
 import java.util.Map;
 import java.util.regex.Matcher;
@@ -32,15 +33,23 @@ public class WordsCounter {
             Matcher matcher = pattern.matcher(contentFromWordsFile);
             while (matcher.find()) {
                 String match = matcher.group(); // Отримати частину рядка, яка відповідає шаблону
-
+                // Викликаю Map wordsCounterStatic в який вкладаю (match - слово яке ми знайшли за допомогою регулярного виразу - Key, а Values буде виклик нашої колекції Map та методу getOrDefault що повертає дефолтне значення для нашого слова і додає +1 у випадку якщо воно вже існує)
                 wordsCounterStatic.put(match, wordsCounterStatic.getOrDefault(match, 0) + 1);
             }
         } catch (IOException ex) {
             throw new RuntimeException(ex);
         }
-        System.err.println(wordsCounterStatic);
+        // перевірка роботи методу
+        System.out.println(wordsCounterStatic);
+
+        // дана складна конструкція була зроблена за допомогою GPT
+        wordsCounterStatic.entrySet().stream()
+                .sorted(Comparator.comparing((Map.Entry<String, Integer> entry) -> entry.getValue()).reversed())
+                .forEach(entry -> System.out.println(String.format("%s %d", entry.getKey(), entry.getValue())));
     }
 
+
+    // запуск програми
     public static void main(String[] args) throws FileNotFoundException {
         WordsCounter wordsCounter = new WordsCounter();
         wordsCounter.wordsCounterMethod("src/main/java/Task10/Task3/words.txt");
