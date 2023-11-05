@@ -2,45 +2,45 @@ package Task9;
 
 public class MyQueue {
 
-    private Node front; // Початок черги
-    private Node rear;  // Кінець черги
-    private int size;   // Розмір черги
+    private Node firstElementofQueue; // Початок колекції
+    private Node lastElementofQueue;  // Кінець колекції
+    private int size;   // Розмір колекції
 
-    public void add(Object value) {     //  add(Object value) додає елемент в кінець
+    public void add(Object value) {     // Метод що додає елемент в кінець черги
         Node newNode = new Node(value);
         if (isEmpty()) {
-            front = newNode;
-            rear = newNode;
+            firstElementofQueue = newNode;
+            lastElementofQueue = newNode;
         } else {
-            rear.next = newNode;
-            rear = newNode;
+            lastElementofQueue.next = newNode;
+            lastElementofQueue = newNode;
         }
         size++;
     }
 
-    public void clear() {       //  clear() очищає колекцію
-        front = null;
-        rear = null;
+    public void clear() {      // метод що очищає колекцію та замінює значення null
+        firstElementofQueue = null;
+        lastElementofQueue = null;
         size = 0;
     }
 
-    public int size() {     //  size() повертає розмір колекції
+    public int size() {     //  метод що повертає розмір стопки
         return size;
     }
 
-    public Object peek() {  //peek() повертає перший елемент з черги
+    public Object peek() {  //  метод що повертає перший елемент стопки
         if (isEmpty()) {
             throw new IllegalStateException("Queue is empty");
         }
-        return front.data;
+        return firstElementofQueue.data;
     }
 
-    public Object poll() {  //poll() повертає перший елемент з черги і видаляє його з колекції
+    public Object poll() {  //  метод що повертає перший елемент стопки та видаляє його з колекції
         if (isEmpty()) {
             throw new IllegalStateException("Queue is empty");
         }
-        Object data = front.data;
-        front = front.next;
+        Object data = firstElementofQueue.data;
+        firstElementofQueue = firstElementofQueue.next;
         size--;
         return data;
     }
