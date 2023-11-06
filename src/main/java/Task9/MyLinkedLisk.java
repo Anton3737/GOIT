@@ -20,7 +20,7 @@ public class MyLinkedLisk {
     }
 
     public void remove(int index) {     //  remove(int index) видаляє елемент із вказаним індексом
-        if (index < 0 || index >= size) {
+        if (index < 0 || index > size) {
             throw new IndexOutOfBoundsException("Invalid index");
         }
         Node current = getNode(index);

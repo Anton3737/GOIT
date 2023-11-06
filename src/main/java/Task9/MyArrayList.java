@@ -42,12 +42,19 @@ public class MyArrayList {
     }
 
     public void remove(int removeIndex) {
-        System.arraycopy(array, removeIndex + 1, array, removeIndex, size - removeIndex - 1);
-        array[size - 1] = null;
-        size--;
+        if (removeIndex < 0 || removeIndex > array.length) {
+            System.out.println("Invalid index");
+        } else {
+            System.arraycopy(array, removeIndex + 1, array, removeIndex, size - removeIndex - 1);
+            array[size - 1] = null;
+            size--;
+        }
     }
 
     public Object get(int get) {
+        if (get < 0 || get >= size) {
+            throw new IndexOutOfBoundsException("Invalid index");
+        }
         return array[get];
     }
 
