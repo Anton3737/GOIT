@@ -22,7 +22,7 @@ public class ExerciseOne {
         } catch (IOException e) {
             throw new RuntimeException(e);
         }
-        System.out.println("Size " + oddNamesList.size() + "\n");
+        System.out.println("Розмір колекції ДО вирахування парних чисел " + oddNamesList.size() + "\n");
 
         for (int i = 0; i < oddNamesList.size(); i++) {
             if (i % 2 == 1) {
