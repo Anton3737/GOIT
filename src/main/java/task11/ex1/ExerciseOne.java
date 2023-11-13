@@ -9,7 +9,7 @@ import java.util.List;
 
 
 public class ExerciseOne {
-    private List<String> oddIndex(String url) throws FileNotFoundException {
+    public List<String> oddIndex(String url) throws FileNotFoundException {
         List<String> oddNamesList = new ArrayList<>();
 
         FileReader fileReader = new FileReader(url);
@@ -39,3 +39,8 @@ public class ExerciseOne {
         ExerciseOne.oddIndex("src/main/java/task11/ex1/names.txt");
     }
 }
+
+//
+//Завдання 1
+//        Метод приймає на вхід список імен. Необхідно повернути рядок вигляду 1. Ivan, 3. Peter...
+//        лише з тими іменами, що стоять під непарним індексом (1, 3 тощо)
