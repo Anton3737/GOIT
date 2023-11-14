@@ -6,10 +6,12 @@ import java.io.FileReader;
 import java.io.IOException;
 import java.util.ArrayList;
 import java.util.List;
+import java.util.stream.Collectors;
+import java.util.stream.IntStream;
 
 
 public class ExerciseOne {
-    public List<String> oddIndex(String url) throws FileNotFoundException {
+    public List<String> oddIndexWithoutStream(String url) throws FileNotFoundException {
         List<String> oddNamesList = new ArrayList<>();
 
         FileReader fileReader = new FileReader(url);
@@ -34,9 +36,21 @@ public class ExerciseOne {
     }
 
 
+    public List<String> oddIndexWithStream(String url) {
+        try (BufferedReader bufferedReader = new BufferedReader(new FileReader(url))) {
+            List<String> oddNamesList = bufferedReader.lines().collect(Collectors.toList());
+            return IntStream.range(0, oddNamesList.size()).filter(i -> i % 2 == 1).mapToObj(oddNamesList::get).peek(System.out::println).collect(Collectors.toList());
+        } catch (IOException e) {
+            throw new RuntimeException(e);
+        }
+    }
+
+
     public static void main(String[] args) throws FileNotFoundException {
         ExerciseOne ExerciseOne = new ExerciseOne();
-        ExerciseOne.oddIndex("src/main/java/task11/ex1/names.txt");
+        ExerciseOne.oddIndexWithoutStream("src/main/java/task11/ex1/names.txt");
+
+        ExerciseOne.oddIndexWithStream("src/main/java/task11/ex1/names.txt");
     }
 }
 

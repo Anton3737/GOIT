@@ -9,10 +9,11 @@ import java.io.FileReader;
 import java.io.IOException;
 import java.text.Collator;
 import java.util.*;
+import java.util.stream.Collectors;
 
 public class NamesOnUpperCaseAndSorted {
 
-    public List<String> upperAndSorted(String url) throws FileNotFoundException {
+    public List<String> upperAndSortedWithoutStream(String url) throws FileNotFoundException {
         List<String> upperNames = new ArrayList<>();
 
         FileReader fileReader = new FileReader(url);
@@ -35,9 +36,22 @@ public class NamesOnUpperCaseAndSorted {
     }
 
 
+    public List<String> upperAndSortedWithStream(String url) {
+        try (BufferedReader bufferedReader = new BufferedReader(new FileReader(url))) {
+            return bufferedReader.lines().map(String::toUpperCase).sorted(Collator.getInstance(new Locale("uk", "UA")).reversed()).peek(System.out::println)
+                    .collect(Collectors.toList());
+        } catch (Exception e) {
+            throw new RuntimeException(e);
+        }
+    }
+
+
     public static void main(String[] args) throws FileNotFoundException {
         NamesOnUpperCaseAndSorted namesOnUpperCaseAndSorted = new NamesOnUpperCaseAndSorted();
-        namesOnUpperCaseAndSorted.upperAndSorted("src/main/java/task11/ex1/names.txt");
+        namesOnUpperCaseAndSorted.upperAndSortedWithoutStream("src/main/java/task11/ex1/names.txt");
+
+        namesOnUpperCaseAndSorted.upperAndSortedWithStream("src/main/java/task11/ex1/names.txt");
+
     }
 }
 
