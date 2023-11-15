@@ -75,6 +75,7 @@ public class MyStack {
         myStack.push("is");
         myStack.push("Anton");
 
+
         System.out.println(myStack.size());
 
         System.out.println(myStack.isEmpty());

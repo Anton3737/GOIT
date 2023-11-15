@@ -28,7 +28,6 @@ public class NamesOnUpperCaseAndSorted {
         } catch (IOException e) {
             throw new RuntimeException(e);
         }
-
         for (int i = 0; i < upperNames.size(); i++) {
             System.out.println(i + " " + upperNames.get(i));
         }
@@ -38,13 +37,14 @@ public class NamesOnUpperCaseAndSorted {
 
     public List<String> upperAndSortedWithStream(String url) {
         try (BufferedReader bufferedReader = new BufferedReader(new FileReader(url))) {
-            return bufferedReader.lines().map(String::toUpperCase).sorted(Collator.getInstance(new Locale("uk", "UA")).reversed()).peek(System.out::println)
+            return bufferedReader.lines().map(String::toUpperCase)
+                    .sorted(Collator.getInstance(new Locale("uk", "UA"))
+                            .reversed()).peek(System.out::println)
                     .collect(Collectors.toList());
         } catch (Exception e) {
             throw new RuntimeException(e);
         }
     }
-
 
     public static void main(String[] args) throws FileNotFoundException {
         NamesOnUpperCaseAndSorted namesOnUpperCaseAndSorted = new NamesOnUpperCaseAndSorted();

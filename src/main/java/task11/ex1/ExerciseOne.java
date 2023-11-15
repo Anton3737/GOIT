@@ -39,7 +39,8 @@ public class ExerciseOne {
     public List<String> oddIndexWithStream(String url) {
         try (BufferedReader bufferedReader = new BufferedReader(new FileReader(url))) {
             List<String> oddNamesList = bufferedReader.lines().collect(Collectors.toList());
-            return IntStream.range(0, oddNamesList.size()).filter(i -> i % 2 == 1).mapToObj(oddNamesList::get).peek(System.out::println).collect(Collectors.toList());
+            return IntStream.range(0, oddNamesList.size()).filter(i -> i % 2 == 1).mapToObj(oddNamesList::get)
+                    .peek(System.out::println).collect(Collectors.toList());
         } catch (IOException e) {
             throw new RuntimeException(e);
         }
