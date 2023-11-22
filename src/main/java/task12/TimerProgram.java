@@ -1,10 +1,6 @@
 package task12;
 
-import java.text.SimpleDateFormat;
-import java.time.LocalTime;
-import java.util.Date;
-
-class TimeDisplayThread extends Thread {
+class SecondTimerThread extends Thread {
 
     @Override
     public void run() {
@@ -22,7 +18,7 @@ class TimeDisplayThread extends Thread {
     }
 }
 
-class MessageDisplayThread extends Thread {
+class EveryFiveSecondThread extends Thread {
     @Override
     public void run() {
         while (true) {
@@ -39,9 +35,9 @@ class MessageDisplayThread extends Thread {
 public class TimerProgram {
     public static void main(String[] args) {
 
-        TimeDisplayThread timeThread = new TimeDisplayThread();
+        SecondTimerThread timeThread = new SecondTimerThread();
 
-        MessageDisplayThread messageThread = new MessageDisplayThread();
+        EveryFiveSecondThread messageThread = new EveryFiveSecondThread();
 
         timeThread.start();
         messageThread.start();
