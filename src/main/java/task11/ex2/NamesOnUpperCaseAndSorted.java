@@ -50,6 +50,8 @@ public class NamesOnUpperCaseAndSorted {
         NamesOnUpperCaseAndSorted namesOnUpperCaseAndSorted = new NamesOnUpperCaseAndSorted();
         namesOnUpperCaseAndSorted.upperAndSortedWithoutStream("src/main/java/task11/ex1/names.txt");
 
+        System.out.println();
+
         namesOnUpperCaseAndSorted.upperAndSortedWithStream("src/main/java/task11/ex1/names.txt");
 
     }

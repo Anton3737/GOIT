@@ -51,6 +51,8 @@ public class ExerciseOne {
         ExerciseOne ExerciseOne = new ExerciseOne();
         ExerciseOne.oddIndexWithoutStream("src/main/java/task11/ex1/names.txt");
 
+        System.out.println();
+
         ExerciseOne.oddIndexWithStream("src/main/java/task11/ex1/names.txt");
     }
 }
