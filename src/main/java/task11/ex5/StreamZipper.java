@@ -42,8 +42,11 @@ public class StreamZipper {
     }
 
     public static void main(String[] args) {
-        Stream<Integer> stream1 = Stream.of(1, 2, 3, 4);
-        Stream<Integer> stream2 = Stream.of(5, 6, 7, 8, 9);
+//        Stream<Integer> stream1 = Stream.of(1, 2, 3, 4);
+//        Stream<Integer> stream2 = Stream.of(5, 6, 7, 8, 9);
+
+        Stream<Integer> stream2 = Stream.of(1, 2, 3, 4);
+        Stream<Integer> stream1 = Stream.of(5, 6, 7, 8, 9);
 
         Stream<Integer> zippedStream = zip(stream1, stream2).sorted();
 

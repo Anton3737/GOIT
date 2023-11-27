@@ -20,7 +20,6 @@ class FizzBuzz extends Thread {
                 if (currentNumber > n) {
                     break;
                 }
-
                 if (currentNumber % 3 == 0 && currentNumber % 5 == 0) {
                     System.out.println("fizzbuzz");
                 } else if (currentNumber % 3 == 0) {
@@ -39,17 +38,18 @@ class FizzBuzz extends Thread {
     }
 
     public static void main(String[] args) {
-        FizzBuzz thread1 = new FizzBuzz("fizz", 3);
-        FizzBuzz thread2 = new FizzBuzz("buzz", 5);
-        FizzBuzz thread3 = new FizzBuzz("fizz", 3);
-        FizzBuzz thread4 = new FizzBuzz("buzz", 5);
+        FizzBuzz A = new FizzBuzz("fizz", 3);
+        FizzBuzz B = new FizzBuzz("buzz", 5);
+        FizzBuzz C = new FizzBuzz("fizz", 3);
+        FizzBuzz D = new FizzBuzz("buzz", 5);
 
-        thread1.start();
-        thread2.start();
-        thread3.start();
-        thread4.start();
+        A.start();
+        B.start();
+        C.start();
+        D.start();
     }
 }
+
 
 //Завдання 2
 //        Напишіть програму, що виводить в консоль рядок, що складається з чисел від 1 до n, але з заміною деяких значень:
@@ -58,3 +58,7 @@ class FizzBuzz extends Thread {
 //        якщо число ділиться на 3 і на 5 одночасно - вивести fizzbuzz
 //        Наприклад, для n = 15, очікується такий результат: 1, 2, fizz, 4, buzz, fizz, 7, 8, fizz, buzz, 11, fizz, 13, 14, fizzbuzz.
 //        Програма повинна бути багатопотоковою, і працювати з 4 потоками:
+//        Потік A викликає fizz(), щоб перевірити, чи ділиться число на 3, і якщо так - додати в чергу на виведення для потоку D рядок fizz.
+//        Потік B викликає buzz(), щоб перевірити, чи ділиться число на 5, і якщо так - додати в чергу на виведення для потоку D рядок buzz.
+//        Потік C викликає fizzbuzz(), щоб перевірити, чи ділиться число на 3 та 5 одночасно, і якщо так - додати в чергу на виведення для потоку D рядок fizzbuzz.
+//        Потік D викликає метод number(), щоб вивести наступне число з черги, якщо є таке число для виведення.
