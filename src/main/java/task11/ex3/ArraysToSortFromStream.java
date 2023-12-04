@@ -11,7 +11,9 @@ public class ArraysToSortFromStream {
     public List<Integer> ArraysToSortFromStreamMethod(String[] arr) {
         try {
             String arrToString = String.join(",", arr);
-            List<Integer> integerList = Arrays.stream(arrToString.split(",")).map(String::trim).map(Integer::parseInt).collect(Collectors.toList());
+            List<Integer> integerList = Arrays.stream(arrToString.split(","))
+                    .map(String::trim).map(Integer::parseInt)
+                    .collect(Collectors.toList());
             Collections.sort(integerList);
             return integerList;
         } catch (Exception e) {

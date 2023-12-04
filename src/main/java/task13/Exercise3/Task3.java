@@ -1,4 +1,4 @@
-package task13;
+package task13.Exercise3;
 
 import com.google.gson.Gson;
 import com.google.gson.GsonBuilder;
@@ -12,6 +12,9 @@ import java.util.List;
 import java.util.stream.Collectors;
 
 public class Task3 {
+
+    public static final String ANSI_RESET = "\u001B[0m";
+    public static final String ANSI_RED = "\u001B[31m";
 
     private int userId;
     private int id;
@@ -59,7 +62,7 @@ public class Task3 {
 
     @Override
     public String toString() {
-        return "UserId: " + userId + " ID: " + id + " Title: " + title + " Completed: " + completed;
+        return "UserId: " + userId + " ID: " + id + " Title: " + title + " Completed: " + ANSI_RED + completed + ANSI_RESET;
     }
 
     public static List<Task3> todosParser(String url) throws IOException {
@@ -79,7 +82,7 @@ public class Task3 {
     public static void main(String[] args) throws IOException {
         try {
             List<Task3> incompleteTodos = todosParser("https://jsonplaceholder.typicode.com/users/1/todos");
-            incompleteTodos.forEach(System.err::println);
+            incompleteTodos.forEach(System.out::println);
         } catch (IOException e) {
             e.printStackTrace();
         }
