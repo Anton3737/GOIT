@@ -38,12 +38,12 @@ public class MatcherCommentsWithPosts {
             ResultPostWithComentsPOJO resultPostWithComentsPOJO = new ResultPostWithComentsPOJO(post, comentsParsList);
 
             Gson gson = new Gson();
-            String json = gson.toJson(resultPostWithComentsPOJO);
+            String resultJsonString = gson.toJson(resultPostWithComentsPOJO);
 
             String nameFile = String.format("user-%d-post-%d-comments.json", userId, userId);
 
             FileWriter fileWriter = new FileWriter("src/main/java/task13/exercise2/source/" + nameFile, StandardCharsets.UTF_8);
-            fileWriter.write(json);
+            fileWriter.write(resultJsonString);
             fileWriter.close();
 
         } catch (IOException e) {
