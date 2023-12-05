@@ -35,10 +35,10 @@ public class MatcherCommentsWithPosts {
                 System.out.println(ANSI_GREEN + coments + ANSI_RESET + "\n");
             }
 
-            ResultPostWithComentsPOJO combinedData = new ResultPostWithComentsPOJO(post, comentsParsList);
+            ResultPostWithComentsPOJO resultPostWithComentsPOJO = new ResultPostWithComentsPOJO(post, comentsParsList);
 
             Gson gson = new Gson();
-            String json = gson.toJson(combinedData);
+            String json = gson.toJson(resultPostWithComentsPOJO);
 
             String nameFile = String.format("user-%d-post-%d-comments.json", userId, userId);
 
