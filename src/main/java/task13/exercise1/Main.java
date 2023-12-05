@@ -45,8 +45,5 @@ public class Main {
         boolean isDelete = deleteUSER(deleteObject);
         System.out.println("Delete User: " + isDelete);
 
-        System.out.println("--------------------------------------GET-----------------------------------------");
-        httpHendler.sendGET(USERS_URL);
-
     }
 }

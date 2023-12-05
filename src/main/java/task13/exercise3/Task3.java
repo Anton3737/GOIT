@@ -1,4 +1,4 @@
-package task13.Exercise3;
+package task13.exercise3;
 
 import com.google.gson.Gson;
 import com.google.gson.GsonBuilder;
