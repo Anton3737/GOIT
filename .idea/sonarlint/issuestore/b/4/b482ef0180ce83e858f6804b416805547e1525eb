@@ -1,0 +1,27 @@
+
+a
+java:S11925"FDefine a constant instead of duplicating this literal "utf-8" 4 times.(îú–Øüÿÿÿÿ
+g
+java:S1192*"QDefine a constant instead of duplicating this literal "application/json" 3 times.(¿Å¨º
+c
+java:S1192*"MDefine a constant instead of duplicating this literal "Content-Type" 3 times.(¿Å¨º
+k	java:S117"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(…©Àúÿÿÿÿ
+o	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(´û¹»
+z
+java:S1149"_Replace the synchronized class "StringBuffer" by an unsynchronized one such as "StringBuilder".(Ôô¡Óüÿÿÿÿ
+P
+java:S1118	":Add a private constructor to hide the implicit public one.(Ôåš½
+@	java:S106"+Replace this use of System.out by a logger.(³ó•
+E	java:S106"+Replace this use of System.out by a logger.(ĞÙÀ‰ıÿÿÿÿ
+@	java:S106 "+Replace this use of System.out by a logger.(ºçáå
+T
+java:S47195"9Replace charset name argument with StandardCharsets.UTF_8(îú–Øüÿÿÿÿ
+O
+java:S47199"9Replace charset name argument with StandardCharsets.UTF_8(´İÀØ
+T
+java:S4719T"9Replace charset name argument with StandardCharsets.UTF_8(îú–Øüÿÿÿÿ
+O
+java:S4719X"9Replace charset name argument with StandardCharsets.UTF_8(´İÀØ
+l
+java:S2159k"VRemove this call to "equals"; comparisons between unrelated types always return false.(ß£Ğ 
+@	java:S106l"+Replace this use of System.out by a logger.(»¸²ë

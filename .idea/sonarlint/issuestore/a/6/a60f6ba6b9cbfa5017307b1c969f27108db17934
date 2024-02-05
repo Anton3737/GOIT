@@ -1,0 +1,9 @@
+
+o	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(ƒÀßõ
+`
+java:S2259""EA "NullPointerException" could be thrown; "current" is nullable here.(ÙÔ³Îøÿÿÿÿ
+@	java:S106]"+Replace this use of System.out by a logger.(‰ùğŒ
+@	java:S106^"+Replace this use of System.out by a logger.(ÔÀ¨©
+E	java:S106_"+Replace this use of System.out by a logger.(Ç•°ûÿÿÿÿ
+@	java:S106`"+Replace this use of System.out by a logger.(‰ùğŒ
+E	java:S106c"+Replace this use of System.out by a logger.(İöÉûÿÿÿÿÿ

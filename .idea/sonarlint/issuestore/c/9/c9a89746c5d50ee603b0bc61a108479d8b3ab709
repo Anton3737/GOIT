@@ -1,0 +1,15 @@
+
+t
+java:S1192G"YDefine a constant instead of duplicating this literal "------------------------" 3 times.(ιη¬ωÿÿÿÿ
+o	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(ƒΐίυ
+@	java:S106."+Replace this use of System.out by a logger.(ρ½Ε™
+E	java:S106D"+Replace this use of System.out by a logger.(ω«¤ϋόÿÿÿÿ
+E	java:S106G"+Replace this use of System.out by a logger.(ιη¬ωÿÿÿÿ
+@	java:S106I"+Replace this use of System.out by a logger.(Χΰ­
+E	java:S106K"+Replace this use of System.out by a logger.(ιη¬ωÿÿÿÿ
+E	java:S106Q"+Replace this use of System.out by a logger.(ω«¤ϋόÿÿÿÿ
+@	java:S106T"+Replace this use of System.out by a logger.(Χΰ­
+E	java:S106V"+Replace this use of System.out by a logger.(ιη¬ωÿÿÿÿ
+E	java:S106X"+Replace this use of System.out by a logger.(†Ζηÿÿÿÿÿ
+B
+java:S1068",Remove this unused "capacity" private field.(ΉτΨ‡

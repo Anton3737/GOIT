@@ -1,0 +1,13 @@
+
+o	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(¾üŠ±
+<
+java:S1170	"!Make this final field static too.(·îÚøÿÿÿÿ
+<
+java:S1170
+"!Make this final field static too.(Õ¤±Ûÿÿÿÿÿ
+7
+java:S1170"!Make this final field static too.(¾ù–
+V	java:S125"<This block of commented-out lines of code should be removed.(Š¿ýÐúÿÿÿÿ
+b	java:S100"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(¹”ÖB
+V	java:S125"<This block of commented-out lines of code should be removed.(ƒìï¾ýÿÿÿÿ
+@	java:S106"+Replace this use of System.out by a logger.(šê¯É

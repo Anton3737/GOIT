@@ -21,45 +21,29 @@ VALUES ('Apple'),
        ('Amazon');
 
 
-INSERT INTO project (CLIENT_ID, PROJECT_NAME, START_DATE, FINISH_DATE)
+INSERT INTO project (CLIENT_ID, START_DATE, FINISH_DATE)
 VALUES
-    -- Проєкти для Apple
-    (1, 'Project A', TO_DATE('2010-02-01', 'YYYY-MM-DD'), TO_DATE('2012-01-31 23:59:59', 'YYYY-MM-DD HH24:MI:SS')),
-    (1, 'Project A', TO_DATE('2022-02-01', 'YYYY-MM-DD'), TO_DATE('2022-03-12 23:59:59', 'YYYY-MM-DD HH24:MI:SS')),
-    (1, 'Project A', TO_DATE('2023-02-01', 'YYYY-MM-DD'), TO_DATE('2025-07-20 23:59:59', 'YYYY-MM-DD HH24:MI:SS')),
-    (1, 'Project A', TO_DATE('2025-08-01', 'YYYY-MM-DD'), TO_DATE('2027-04-24 23:59:59', 'YYYY-MM-DD HH24:MI:SS')),
-    (1, 'Project A', TO_DATE('2027-05-01', 'YYYY-MM-DD'), TO_DATE('2029-08-13 23:59:59', 'YYYY-MM-DD HH24:MI:SS')),
-    (1, 'Project A', TO_DATE('2029-09-01', 'YYYY-MM-DD'), TO_DATE('2031-08-01 23:59:59', 'YYYY-MM-DD HH24:MI:SS')),
-    (1, 'Project A', TO_DATE('2031-09-01', 'YYYY-MM-DD'), TO_DATE('2041-08-06 23:59:59', 'YYYY-MM-DD HH24:MI:SS')),
-    -- Проєкти для Google
-    (2, 'Project B', TO_DATE('2022-01-01', 'YYYY-MM-DD'), TO_DATE('2025-01-16 23:59:59', 'YYYY-MM-DD HH24:MI:SS')),
-    (2, 'Project B', TO_DATE('2022-02-01', 'YYYY-MM-DD'), TO_DATE('2023-01-18 23:59:59', 'YYYY-MM-DD HH24:MI:SS')),
-    (2, 'Project B', TO_DATE('2010-02-01', 'YYYY-MM-DD'), TO_DATE('2012-01-31 23:59:59', 'YYYY-MM-DD HH24:MI:SS')),
-    (2, 'Project B', TO_DATE('2010-02-01', 'YYYY-MM-DD'), TO_DATE('2012-03-20 23:59:59', 'YYYY-MM-DD HH24:MI:SS')),
-    (2, 'Project B', TO_DATE('2026-02-01', 'YYYY-MM-DD'), TO_DATE('2026-07-03 23:59:59', 'YYYY-MM-DD HH24:MI:SS')),
-    (2, 'Project B', TO_DATE('2010-02-01', 'YYYY-MM-DD'), TO_DATE('2012-01:10 23:59:59', 'YYYY-MM-DD HH24:MI:SS')),
-    (2, 'Project B', TO_DATE('2031-09-01', 'YYYY-MM-DD'), TO_DATE('2033-08-01 23:59:59', 'YYYY-MM-DD HH24:MI:SS')),
-    -- Проєкти для Microsoft
-    (3, 'Project C', TO_DATE('2022-01-01', 'YYYY-MM-DD'), TO_DATE('2027-01:20 23:59:59', 'YYYY-MM-DD HH24:MI:SS')),
-    (3, 'Project C', TO_DATE('2021-02-01', 'YYYY-MM-DD'), TO_DATE('2023-01:31 23:59:59', 'YYYY-MM-DD HH24:MI:SS')),
-    (3, 'Project C', TO_DATE('2018-02-01', 'YYYY-MM-DD'), TO_DATE('2023-07-31 23:59:59', 'YYYY-MM-DD HH24:MI:SS')),
-    (3, 'Project C', TO_DATE('2012-08-01', 'YYYY-MM-DD'), TO_DATE('2024-01:31 23:59:59', 'YYYY-MM-DD HH24:MI:SS')),
-    (3, 'Project C', TO_DATE('2016-02-01', 'YYYY-MM-DD'), TO_DATE('2025-07-31 23:59:59', 'YYYY-MM-DD HH24:MI:SS')),
-    (3, 'Project C', TO_DATE('2017-08-01', 'YYYY-MM-DD'), TO_DATE('2025-08-28 23:59:59', 'YYYY-MM-DD HH24:MI:SS')),
-    (3, 'Project C', TO_DATE('2022-09-01', 'YYYY-MM-DD'), TO_DATE('2024-08-31 23:59:59', 'YYYY-MM-DD HH24:MI:SS')),
-    -- Проєкти для OnlyFans
-    (4, 'Project D', TO_DATE('2008-01-01', 'YYYY-MM-DD'), TO_DATE('2022-03-30 23:59:59', 'YYYY-MM-DD HH24:MI:SS')),
-    (4, 'Project D', TO_DATE('2022-02-01', 'YYYY-MM-DD'), TO_DATE('2024-02-10 23:59:59', 'YYYY-MM-DD HH24:MI:SS')),
-    (4, 'Project D', TO_DATE('2023-02-01', 'YYYY-MM-DD'), TO_DATE('2027-01-14 23:59:59', 'YYYY-MM-DD HH24:MI:SS')),
-    (4, 'Project D', TO_DATE('2021-02-01', 'YYYY-MM-DD'), TO_DATE('2030-07-07 23:59:59', 'YYYY-MM-DD HH24:MI:SS')),
-    (4, 'Project D', TO_DATE('2019-08-01', 'YYYY-MM-DD'), TO_DATE('2030-12-22 23:59:59', 'YYYY-MM-DD HH24:MI:SS')),
-    (4, 'Project D', TO_DATE('2018-01-01', 'YYYY-MM-DD'), TO_DATE('2039-08-25 23:59:59', 'YYYY-MM-DD HH24:MI:SS')),
-    -- Проєкти для Amazon
-    (5, 'Project E', TO_DATE('2009-01-01', 'YYYY-MM-DD'), TO_DATE('2021-09-12 23:59:59', 'YYYY-MM-DD HH24:MI:SS')),
-    (5, 'Project E', TO_DATE('2010-02-01', 'YYYY-MM-DD'), TO_DATE('2012-01-31 23:59:59', 'YYYY-MM-DD HH24:MI:SS')),
-    (5, 'Project E', TO_DATE('2011-02-01', 'YYYY-MM-DD'), TO_DATE('2023-04-30 23:59:59', 'YYYY-MM-DD HH24:MI:SS')),
-    (5, 'Project E', TO_DATE('2012-08-01', 'YYYY-MM-DD'), TO_DATE('2022-07-31 23:59:59', 'YYYY-MM-DD HH24:MI:SS')),
-    (5, 'Project E', TO_DATE('2020-02-01', 'YYYY-MM-DD'), TO_DATE('2025-05-30 23:59:59', 'YYYY-MM-DD HH24:MI:SS'));
+    (1, '2012-01-15', '2019-10-15'),
+    (2, '2013-02-28', '2020-06-20'),
+    (3, '2019-06-18', '2023-11-10'),
+    (4, '2019-10-23', '2022-09-15'),
+    (1, '2013-02-20', '2015-02-11'),
+    (5, '2014-07-10', '2015-02-28'),
+    (2, '2014-09-28', '2015-01-10'),
+    (4, '2015-03-20', '2016-10-07'),
+    (3, '2015-06-28', '2017-12-10'),
+    (5, '2016-06-20', '2017-12-15'),
+    (1, '2017-02-15', '2019-12-15'),
+    (3, '2018-08-28', '2020-02-10'),
+    (5, '2020-08-20', '2020-02-15'),
+    (2, '2012-02-28', '2021-03-10'),
+    (1, '2012-01-20', '2014-03-11'),
+    (4, '2013-12-23', '2017-11-15'),
+    (2, '2014-12-28', '2020-08-20'),
+    (4, '2016-04-20', '2017-11-07'),
+    (5, '2014-09-10', '2015-04-30'),
+    (3, '2013-06-19', '2017-11-10');
+
 
 
 

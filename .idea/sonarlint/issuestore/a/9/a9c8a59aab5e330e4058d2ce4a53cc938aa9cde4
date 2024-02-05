@@ -1,0 +1,17 @@
+
+o	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(´û¹»
+F
+java:S2440"+Remove this instantiation of "HttpHendler".(ä¶è™üÿÿÿÿ
+E	java:S106"+Replace this use of System.out by a logger.(Ô€é¥ûÿÿÿÿ
+K
+java:S2209"5Change this instance-reference to a static reference.(Â€ô
+@	java:S106"+Replace this use of System.out by a logger.(‰Àµé
+P
+java:S2209"5Change this instance-reference to a static reference.(úÚÎ¦øÿÿÿÿ
+@	java:S106"+Replace this use of System.out by a logger.(›Ù±¨
+@	java:S106"+Replace this use of System.out by a logger.(éËÁ
+K
+java:S2209"5Change this instance-reference to a static reference.(¹Â‡˜
+@	java:S106"+Replace this use of System.out by a logger.(’Óû¡
+@	java:S106"+Replace this use of System.out by a logger.(´¡ù
+@	java:S106"+Replace this use of System.out by a logger.(òÏù¤

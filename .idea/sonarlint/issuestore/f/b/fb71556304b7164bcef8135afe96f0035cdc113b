@@ -1,0 +1,19 @@
+
+c
+java:S1192k"HDefine a constant instead of duplicating this literal "Thread " 3 times.(ì¼†üÿÿÿÿ
+o	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(—ôÁ§
+t
+java:S21425"^Either re-interrupt this method or rethrow the "InterruptedException" that can be caught here.(”ı¾
+E	java:S1061"+Replace this use of System.out by a logger.(Íñ³Ãüÿÿÿÿ
+@	java:S1063"+Replace this use of System.out by a logger.( øÜê
+t
+java:S2142D"^Either re-interrupt this method or rethrow the "InterruptedException" that can be caught here.(ä ¹€
+t
+java:S2142L"^Either re-interrupt this method or rethrow the "InterruptedException" that can be caught here.(ä ¹€
+t
+java:S2142T"^Either re-interrupt this method or rethrow the "InterruptedException" that can be caught here.(ä ¹€
+t
+java:S2142\"^Either re-interrupt this method or rethrow the "InterruptedException" that can be caught here.(ä ¹€
+E	java:S106k"+Replace this use of System.out by a logger.(ì¼†üÿÿÿÿ
+@	java:S106x"+Replace this use of System.out by a logger.(àé±Á
+A	java:S106€"+Replace this use of System.out by a logger.(ÁÖ

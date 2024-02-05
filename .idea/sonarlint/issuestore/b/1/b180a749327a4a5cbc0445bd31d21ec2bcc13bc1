@@ -1,0 +1,7 @@
+
+`	java:S112("FDefine and throw a dedicated exception instead of using a generic one.(¼ÿ¾¹ÿÿÿÿÿ
+n	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(º¡ø@
+E	java:S106+"+Replace this use of System.out by a logger.(ÎŽ—²ÿÿÿÿÿ
+Q
+java:S1612/"<Replace this lambda with method reference 'Entry::getValue'.(Ù˜3
+E	java:S1060"+Replace this use of System.out by a logger.(¹˜ãŒøÿÿÿÿ
